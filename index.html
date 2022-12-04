@@ -10,101 +10,141 @@
       crossorigin="anonymous"
     />
     <link href="src/styles.css" />
+    <link href="src/style.css" rel="stylesheet"/>
   </head>
 
   <body>
-    <form id="search-form">
-      <label for="text">
-        <input type="text" placeholder="city" class="inputcity" id="city-input" />
-      </label>
-      <input type="submit" value="search" class="buttonsearch"  />
-    </form>
-    <div class="row">
-      <div class="col-sm-4">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title" id="city">
-              Yaremche</h5>
-            <p class="card-text">
-              <li id="date">
-             
-              </li> <br />
-              Mostly Sunny 22ºC / 23ºC <div>
-                <img
-                  src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-weather/ilu3.webp"
-                  width="150px"
+    <div class="container">
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <form id="search-form" class="mb-3">
+            <div class="row">
+              <div class="col-9">
+                <input
+                  type="search"
+                  placeholder="Type a city.."
+                  class="form-control"
+                  id="city-input"
+                  autocomplete="off"
                 />
               </div>
-            </p>
-            
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6">
+              <div class="col-3">
+                <inputloat-left>
+                  <input
+                  type="submit"
+                  value="Search"
+                  class="btn btn-primary w-100"
+                />
+              
+                </inputloat-left>
+                </div>
+                </div>
+                </form>
+    
+    <div class="row">
+      <div class="col-sm-10">
         <div class="card">
           <div class="card-body">
-            <h5 class="card-title">For five days</h5>
-            <p class="card-text">
-              <div class="row">
-          
-                <div class="col-sm-3">
-                  <div class="card">
-                    <div class="card-body">
-                      <p class="card-text">
-                        Sep 05th Mon <br />
-                         ⛅ 22ºC / 18ºC
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-3">
-                  <div class="card">
-                    <div class="card-body">
-                      <p class="card-text">
-                        Sep 06th Tue <br />
-                        ⛅ 22ºC / 17ºC
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-3">
-                  <div class="card">
-                    <div class="card-body">
-                      <p class="card-text">
-                        Sep 07th Wed <br />
-                        🌞 21ºC / 16ºC
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-3">
-                  <div class="card">
-                    <div class="card-body">
-                      <p class="card-text">
-                        Sep 08th Thi <br />
-                        ⛅ 20ºC / 15ºC
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-3">
-                  <div class="card">
-                    <div class="card-body">
-                      <p class="card-text">
-                        Sep 09th Fri <br />
-                        ⛅ 23ºC / 22ºC
-                      </p>
-                    </div>
-                  </div>
-                </div>
+<div class="overview">
+            <h1 id="city"> Kyiv </h1>
+            <ul>
+              <li> Friday 05:00 
+                <span id="date">
+                </span>
+              </li>
+              <li id="description"> </li>
+            </ul>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <div class="clearfix weather-temperature">
+                <img src="" alt="Clear" id="icon" class="float-left" />
+                <div class="float-left">
+                  <strong id="temperature"></strong
+                  ><span class="units"
+                    ><a href="#" id="celsius-link" class="active">°C</a> |
+                    <a href="#" id="fahrenheit-link">°F</a></span
+                  >
+                     </div>
               </div>
             </div>
+            <div class="col-6">
+              <ul>
+                <li>Humidity: <span id="humidity"></span>%</li>
+                <li>Wind: <span id="wind"></span> km/h</li>
+              </ul>
+            </div>
           </div>
-            </p>
-           
+        </div>
+              
           </div>
         </div>
       </div>
+     <div class="conntainer">
+      <div class="WeatherForecast row">
+      <div class="col-sm-2">
+        <div class="card">
+      <div class="WeatherForecastPreview">
+        <div class="forecast-time">Wed</div>
+        <canvas width="38" height="38"></canvas>
+        <div class="forecast-temperature">
+          <span class="forecast-temperature-max">12°</span>
+          <span class="forecast-temperature-min">7°</span>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="col-sm-2">
+      <div class="card">
+      <div class="WeatherForecastPreview">
+        <div class="forecast-time">Thu</div>
+        <canvas width="38" height="38"></canvas>
+        <div class="forecast-temperature">
+          <span class="forecast-temperature-max">11°</span>
+          <span class="forecast-temperature-min">8°</span>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="col-sm-2">
+      <div class="card">
+      <div class="WeatherForecastPreview">
+        <div class="forecast-time">Fri</div>
+        <canvas width="38" height="38"></canvas>
+        <div class="forecast-temperature">
+          <span class="forecast-temperature-max">10°</span>
+          <span class="forecast-temperature-min">6°</span>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="col-sm-2">
+      <div class="card">
+      <div class="WeatherForecastPreview">
+        <div class="forecast-time">Sat</div>
+        <canvas width="38" height="38"></canvas>
+        <div class="forecast-temperature">
+          <span class="forecast-temperature-max">8°</span>
+          <span class="forecast-temperature-min">6°</span>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="col-sm-2">
+      <div class="card">
+      <div class="WeatherForecastPreview">
+        <div class="forecast-time">Sun</div>
+        <canvas width="38" height="38"></canvas>
+        <div class="forecast-temperature">
+          <span class="forecast-temperature-max">12°</span>
+          <span class="forecast-temperature-min">10°</span>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  
   
     <script src="src/index.js"></script>
   </body>
