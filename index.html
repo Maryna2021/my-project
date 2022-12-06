@@ -9,8 +9,8 @@
       integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
       crossorigin="anonymous"
     />
-     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <link href="src/style.css" rel="stylesheet"/>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link href="src/style.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -31,121 +31,69 @@
               <div class="col-3">
                 <inputloat-left>
                   <input
-                  type="submit"
-                  value="Search"
-                  class="btn btn-primary w-100"
-                />
-              
+                    type="submit"
+                    value="Search"
+                    class="btn btn-primary w-100"
+                  />
                 </inputloat-left>
-                </div>
-                </div>
-                </form>
-    
-    <div class="row">
-      <div class="col-sm-10">
-        <div class="card">
-          <div class="card-body">
-<div class="overview">
-            <h1 id="city"> Kyiv </h1>
-            <ul>
-              <li> Friday 05:00 
-                <span id="date">
-                </span>
-              </li>
-              <li id="description"> </li>
-            </ul>
-          </div>
-          <div class="row">
-            <div class="col-6">
-              <div class="clearfix weather-temperature">
-                <img src="" alt="Clear" id="icon" class="float-left" />
-                <div class="float-left">
-                  <strong id="temperature"></strong
-                  ><span class="units"
-                    ><a href="#" id="celsius-link" class="active">°C</a> |
-                    <a href="#" id="fahrenheit-link">°F</a></span
-                  >
-                     </div>
               </div>
             </div>
-            <div class="col-6">
-              <ul>
-                <li>Humidity: <span id="humidity"></span>%</li>
-                <li>Wind: <span id="wind"></span> km/h</li>
-              </ul>
+          </form>
+          <div class="row">
+            <div class="col-sm-10">
+              <div class="card">
+                <div class="card-body">
+                  <div class="overview">
+                    <h1 id="city">Kyiv</h1>
+                    <ul>
+                      <li>
+                        <span id="date"> </span>
+                      </li>
+                      <li id="description"></li>
+                    </ul>
+                  </div>
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="clearfix weather-temperature">
+                        <img
+                          src="https://assets.msn.com/weathermapdata/1/static/svg/72/v6/card/CloudyV3.svg"
+                          alt="Clear"
+                          id="icon"
+                          class="float-left"
+                        />
+                        <div class="float-left">
+                          <strong id="temperature"></strong>
+                          <span class="units">
+                            <a href="#" id="celsius-link" class="active">°C</a>
+                            | <a href="#" id="fahrenheit-link">°F</a></span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <ul>
+                        <li>Humidity: <span id="humidity"></span>%</li>
+                        <li>Wind: <span id="wind"></span> m/h</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="conntainer">
+                  <div class="WeatherForecast" id="forecast"></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-              
-          </div>
-        </div>
-      </div>
-     <div class="conntainer">
-      <div class="WeatherForecast row">
-      <div class="col-sm-2">
-        <div class="card">
-      <div class="WeatherForecastPreview">
-        <div class="forecast-time">Wed</div>
-        <canvas width="38" height="38"></canvas>
-        <div class="forecast-temperature">
-          <span class="forecast-temperature-max">12°</span>
-          <span class="forecast-temperature-min">7°</span>
-        </div>
-      </div>
+        <small>
+          <a href="https://github.com/Maryna2021/my-project" target="_blank"
+            >Open-source code</a
+          >
+          by Maryna Ripa
+        </small>
       </div>
     </div>
-    <div class="col-sm-2">
-      <div class="card">
-      <div class="WeatherForecastPreview">
-        <div class="forecast-time">Thu</div>
-        <canvas width="38" height="38"></canvas>
-        <div class="forecast-temperature">
-          <span class="forecast-temperature-max">11°</span>
-          <span class="forecast-temperature-min">8°</span>
-        </div>
-      </div>
-    </div>
-    </div>
-    <div class="col-sm-2">
-      <div class="card">
-      <div class="WeatherForecastPreview">
-        <div class="forecast-time">Fri</div>
-        <canvas width="38" height="38"></canvas>
-        <div class="forecast-temperature">
-          <span class="forecast-temperature-max">10°</span>
-          <span class="forecast-temperature-min">6°</span>
-        </div>
-      </div>
-      </div>
-    </div>
-    <div class="col-sm-2">
-      <div class="card">
-      <div class="WeatherForecastPreview">
-        <div class="forecast-time">Sat</div>
-        <canvas width="38" height="38"></canvas>
-        <div class="forecast-temperature">
-          <span class="forecast-temperature-max">8°</span>
-          <span class="forecast-temperature-min">6°</span>
-        </div>
-      </div>
-      </div>
-    </div>
-    <div class="col-sm-2">
-      <div class="card">
-      <div class="WeatherForecastPreview">
-        <div class="forecast-time">Sun</div>
-        <canvas width="38" height="38"></canvas>
-        <div class="forecast-temperature">
-          <span class="forecast-temperature-max">12°</span>
-          <span class="forecast-temperature-min">10°</span>
-        </div>
-      </div>
-      </div>
-    </div>
-  </div>
-  </div>
-  
-  
+
     <script src="src/index.js"></script>
   </body>
 </html>
